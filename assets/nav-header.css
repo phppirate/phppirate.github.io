@@ -1,0 +1,302 @@
+a.spin-button.heart{
+      background: #000 url(heart.svg) no-repeat;
+      background-size: 50px 50px;
+      background-position: 10px 10px;
+    }
+    a.spin-button.star{
+      background: #000 url(star.svg) no-repeat;
+      background-size: 50px 50px;
+      background-position: 10px 10px;
+    }
+    a.spin-button.facebook{
+      background: #000 url(follow.svg) no-repeat;
+      background-size: 50px 50px;
+      background-position: 10px 10px;
+    }
+    a.spin-button.gallery{
+      background: #000 url(gallery.svg) no-repeat;
+      background-size: 50px 50px;
+      background-position: 10px 10px;
+    }
+    a.spin-button.home{
+      background: #000 url(home.svg) no-repeat;
+      background-size: 50px 50px;
+      background-position: 10px 10px;
+    }
+    a.spin-button.recent{
+      background: #000 url(recent.svg) no-repeat;
+      background-size: 50px 50px;
+      background-position: 10px 10px;
+    }
+    a.spin-button.twitter{
+      background: #000 url(tweet.svg) no-repeat;
+      background-size: 50px 50px;
+      background-position: 10px 10px;
+    }
+    a.spin-button.share{
+      background: #000 url(share.svg) no-repeat;
+      background-size: 50px 50px;
+      background-position: 10px 10px;
+    }
+    a.spin-button.mail{
+      background: #000 url(mail.svg) no-repeat;
+      background-size: 50px 50px;
+      background-position: 10px 10px;
+    }
+    a.spin-button.bars{
+      background: #000 url(bars.svg) no-repeat;
+      background-size: 50px 50px;
+      background-position: 10px 10px;
+    }
+
+
+    a.spin-button{
+      background: black;
+      border-radius: 50px;
+      display: block;
+      padding: 10px;
+      height: 50px;
+      text-decoration: none;
+      width: 50px;
+      text-align: left;
+      overflow: hidden;
+      -webkit-transition: all 0.5s cubic-bezier(.1,.32,.40,1.5);
+      border: 2px solid #ffa400;
+    }
+    a.spin-button span{
+      color: #fff;
+      display: inline-block;
+      width: 250px;
+      font-size: 36px;
+      line-height: 50px;
+      margin: 0px 0px 0px -250px;
+      overflow: hidden;
+      -webkit-transition: all 0.5s cubic-bezier(.1,.32,.58,1.5);
+      text-shadow: none;
+    }
+    a.spin-button:hover span{
+      line-height: 50px;
+      margin: 0px 0px 0px 20px;
+      text-shadow: 0px 0px 10px #ffa400;
+    }
+    a.spin-button:hover{
+      background-position: 210px 10px;
+      width: 250px;
+    }
+    
+    .fixed-nav{
+      position: fixed;
+      z-index: 100000;
+
+    }
+    
+        
+    .user-profile{
+      width: 10px;
+      height: 10px;
+      position: relative;
+      top: -50px;
+      left: 145px;
+      background: black;
+      border: 10px solid #ffa400;
+      border-radius: 20px 20px 0px 0px;
+      padding-top: 100px;
+      padding-bottom: -100px;
+      z-index: 10;
+      overflow: hidden;
+      -webkit-transition: all 0.5s cubic-bezier(.1,.32,.58,1.5);
+    }
+    .profile {
+      z-index: 10000;
+      position: fixed;
+      right: -150px;
+      bottom: 00px;
+      width: 320px;
+      max-height: 500px;
+      max-width: 340px;
+/*      background: red;*/
+      padding: 50px 20px 10px 20px;
+      -webkit-transition: all 0.5s cubic-bezier(.1,.32,.58,1.5);
+    }
+    .profile:hover, #profile:target{
+      bottom: 0px;
+      right: 0px;
+    }
+    .profile:hover .user-profile, #profile:target .user-profile{
+      width: 300px;
+      height: 280px;
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+    .profile:hover .profile-image, #profile:target .profile-image{
+      transform: rotate(0deg);
+    }
+    #profile:target .user-profile .close{
+      display: block;
+      position: relative;
+      top: -100px;
+      left: 5px;
+      color: #666;
+      text-decoration: none;
+      font-size: 36px;
+      margin-bottom: -36px;
+    }
+
+    .profile .user-profile .close{
+      display: none;
+    }
+
+    .profile .profile-image{
+      background: #000;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 110px;
+      border: 10px solid #ffa400;
+      margin-left: 50px;
+      margin-top: -135px;
+      position: relative;
+      bottom: -100px;
+      cursor: pointer;
+      z-index: 10000000;
+      transform: rotate(-50deg);
+      -webkit-transition: all 0.5s cubic-bezier(.1,.32,.58,1.5);
+    }
+    .profile .profile-image img {
+      width: 100%;
+    }
+    .user-profile .profile-info{
+      color: #fff;
+      padding: 10px;
+    }
+    .user-profile .profile-info h2{
+      text-align: center;
+      margin: 0px 0px 2px 0px;
+    }
+    .user-profile .profile-info h3{
+      text-align: center;
+      margin: 0;
+      font-size: 15px;
+      color: #666;
+    }
+    .user-profile .profile-info ul{
+      padding: 0;
+      margin: 33px 0px 0px 0px;
+      list-style: none;
+      width: 100%;
+      overflow: hidden;
+    }
+    .user-profile .profile-info ul li{
+      list-style: none;
+      width: 100%;
+    }
+    .user-profile .profile-info a{
+      color: #ffa400;
+      text-decoration: none;
+      transition: all .2s ease-in;
+      display: block;
+      width: 300px;
+      padding: 10px;
+      background: #000;
+      border-bottom: 1px dotted #333;
+      margin: 0;
+    }
+    
+    .user-profile .profile-info a:hover{
+      color: #fff;
+      background: #111;
+      text-decoration: none;
+    }
+    .user-profile .profile-info ul li:first-child a{
+      border-top: 1px dotted #333;
+    }
+
+
+
+    .action-buttons{
+      position: relative;
+      top: 0px;
+      left: 0px;
+      height: 54px;
+      -webkit-transition: all 0.5s cubic-bezier(.1,.32,.58,1.5);
+      cursor: pointer;
+    }
+    .action-button{
+      width: 50px;
+      height: 50px;
+      border-radius: 27px;
+      border: 2px solid #ffa400;
+      color: #fff;
+      display: inline-block;
+      transform: rotate(0deg);
+      -webkit-transition: all 0.5s cubic-bezier(.1,.32,.58,1.5);
+      margin-left: -58.5px;
+    }
+    
+    .action-button:first-child{
+      margin: 0;
+    }
+    .action-buttons:hover .action-button{
+      margin: 0;
+      transform: rotate(360deg);
+    }
+    .action-buttons:hover .action-button:first-child{
+      transform: rotate(0deg);
+    }
+    .action-button:hover{
+      background-color: #fff;
+    }
+    .action-button.follow{
+      background: #000 url(follow.svg) no-repeat;
+      background-size: 30px 30px;
+      background-position: center;
+    }
+    .action-button.like{
+      background: #000 url(heart.svg) no-repeat;
+      background-size: 30px 30px;
+      background-position: center;
+    }
+    .action-button.share{
+      background: #000 url(share.svg) no-repeat;
+      background-size: 30px 30px;
+      background-position: center;
+    }
+    .action-button.email{
+      background: #000 url(mail.svg) no-repeat;
+      background-size: 30px 30px;
+      background-position: center;
+    }
+    .action-button.home{
+      background: #000 url(home.svg) no-repeat;
+      background-size: 30px 30px;
+      background-position: center;
+    }
+    .action-button.tweet{
+      background: #000 url(tweet.svg) no-repeat;
+      background-size: 30px 30px;
+      background-position: center;
+    }
+    .action-button.gallery{
+      background: #000 url(gallery.svg) no-repeat;
+      background-size: 30px 30px;
+      background-position: center;
+    }
+    .action-button.star{
+      background: #000 url(star.svg) no-repeat;
+      background-size: 30px 30px;
+      background-position: center;
+    }
+    .action-button.recent{
+      background: #000 url(recent.svg) no-repeat;
+      background-size: 30px 30px;
+      background-position: center;
+    }
+    .action-button.bars{
+      background: #000 url(bars.svg) no-repeat;
+      background-size: 30px 30px;
+      background-position: center;
+    }
+    .action-button:hover{
+      background-color: #333;
+    }
