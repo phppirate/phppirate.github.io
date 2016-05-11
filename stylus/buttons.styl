@@ -1,0 +1,50 @@
+.btn{
+    border-radius 2px
+    transition all .2s
+    &:hover{
+        box-shadow 0 2px 3px rgba(0, 0, 0, 0.24)
+    }
+}
+.btn.btn-default{
+    color #fff
+    background #aaa
+    border none
+    &:hover, &:active{
+        background lighten(#aaa, 10%)
+    }
+}
+.btn.btn-primary{
+    background brand-primary
+    border none
+    &:hover, &:active{
+        background lighten(brand-primary, 10%)
+    }
+}
+.btn.btn-success{
+    background brand-success
+    border none
+    &:hover, &:active{
+        background darken(brand-success, 10%)
+    }
+}
+.btn.btn-info{
+    background brand-info
+    border none
+    &:hover, &:active{
+        background darken(brand-info, 10%)
+    }
+}
+.btn.btn-warning{
+    background brand-warning
+    border none
+    &:hover, &:active{
+        background darken(brand-warning, 10%)
+    }
+}
+.btn.btn-danger{
+    background brand-danger
+    border none
+    &:hover, &:active{
+        background darken(brand-danger, 10%)
+    }
+}

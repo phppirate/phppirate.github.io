@@ -1,0 +1,63 @@
+@import "simpleMDE-base.styl"
+
+.editor-toolbar{
+    background: brand-primary;
+    opacity: 1;
+    border-top: 1px solid brand-primary;
+    border-left: 1px solid brand-primary;
+    border-right: 1px solid brand-primary;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    &:hover{
+        opacity: 1;
+    }
+    &.fullscreen::before, .editor-toolbar.fullscreen::after{
+        display: none;
+    }
+    &.fullscreen{
+        border: none;
+        background: brand-primary;
+        opacity: 1;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        &:hover{
+            border: none;
+            background: brand-primary;
+            opacity: 1;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+    }
+    
+    a{
+        color: brand-success !important;
+        &:hover{
+            color: brand-success !important;
+            border: 1px solid brand-success;
+            background: none;
+        }
+        &.active{
+            color: brand-info !important;
+            border: 1px solid brand-info;
+            background: none;
+        }
+    }
+    &.disabled-for-preview a:not(.no-disable){
+        opacity: .5;
+        color: brand-success !important;
+        background: none;
+    }
+    i.separator{
+        border-left: 1px solid brand-success;
+        border-right: 1px solid brand-success;
+    }
+}
+
+.CodeMirror{
+    font-family "PT Mono"
+    border-color brand-primary
+    border-radius 0px 0px 2px 2px
+}
+.editor-preview-active, .editor-preview-active-side{
+    font-family "Montserrat"
+}

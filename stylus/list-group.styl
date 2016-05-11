@@ -1,0 +1,30 @@
+.list-group{
+    box-shadow 0 2px 3px rgba(0, 0, 0, 0.24)
+    border-radius 2px
+    .list-group-item{
+        border none
+        margin 0
+        border-bottom 1px solid #eee
+        transition border-left .1s
+        &.active, &.v-link-active{
+            background #fff
+            border-bottom 1px solid #eee
+            border-left 4px solid #00E489
+            color #555
+        }
+    }
+    .list-group-item:last-child{
+        border-radius 0px 0px 2px 2px
+        border-bottom none
+    }
+    .list-group-item:first-child{
+        border-radius 2px 2px 0px 0px
+    }
+}
+.panel > .list-group, .modal-content > .list-group{
+    box-shadow none
+    border-radius 0px
+    .list-group-item{
+        border-radius 0px
+    }
+}

@@ -1,0 +1,69 @@
+.modal-content{
+    border-radius 2px
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.24);
+    border none
+}
+.modal-backdrop{
+    background #14181D
+    z-index: 100
+}
+
+
+// .modal.fade.docked .modal-dialog{
+//     max-width: 100%;
+//     transform: translate(25%, 0);
+//     position: fixed;
+//     top: 0px;
+//     right: 0px;
+//     bottom: 0px;
+//     margin: 0px;
+// }
+// .modal.in.docked .modal-dialog{
+//     transform: translate(0, 0);
+// }
+// .modal.docked .modal-dialog .modal-content{
+//     height: 100%;
+//     border-radius: 0px;
+//     border: none;
+//     overflow: scroll;
+// }
+
+// .modal.docked .modal-dialog{
+//     position fixed
+//     top 0px
+//     bottom 0px
+//     height 100%
+//     margin 0
+//     .modal-content{
+//         border-radius 0px
+//         height: 100%
+//         padding-top 50px
+//         .modal-header{
+//             position fixed
+//             top 0px
+//             width: 100%
+//         }
+//         .modal-footer{
+//             position fixed
+//             bottom 0px
+//             width: 100%
+//         }
+//     }
+// }
+
+// .modal.docked.docked-right .modal-dialog{
+//     right 0px
+// }
+
+// .modal.docked.docked-left .modal-dialog{
+//     left 0px
+// }
+.modal{
+    z-index: 9999999
+}
+.modal.fade.docked-right .modal-dialog{
+    transform: translateX(100px);
+}
+.modal.in.docked-right .modal-dialog{
+    transform: translateX(0px);
+}

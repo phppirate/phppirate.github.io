@@ -1,0 +1,45 @@
+.content-area {
+    flex: 1;
+    min-height: 100%;
+    overflow: scroll;
+    transition: all .2s;
+
+    @media (max-width 767px){
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.main-content {
+    padding 40px
+    min-height 100%
+    height 100% !important
+    overflow-x: hidden; 
+    @media (max-width 991px) {
+        padding 0
+    }
+}
+
+.no-pad > div{
+    padding 0
+    .panel{
+        border-radius 0px
+        .panel-heading, .panel-footer{
+            border-radius 0px
+        }
+    }
+}
+@media (max-width 991px) {
+    .col-sm-3{
+        padding 0
+    }
+    .col-xs-4{
+        padding 0
+    }
+    .panel{
+        border-radius 0px
+        .panel-heading, .panel-footer{
+            border-radius 0px
+        }
+    }
+}
