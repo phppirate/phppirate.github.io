@@ -1,159 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Spin Like Button</title>
-  <link rel="stylesheet" href="assets/nav-header.css">
-  <style>
-    body{
-      font-family: helvetica;
-      font-weight: 100;
-      background: #ffefcb url(assets/hudBackground.svg) no-repeat;
-      background-size: cover;
-    }
-    
-    @-webkit-keyframes hud1 {
-      0% {
-        transform: rotate(0deg);
-      }
-      10% {
-        transform: rotate(30deg);
-      }
-      50% {
-        transform: rotate(-30deg);
-      }
-      90% {
-        transform: rotate(330deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+    <head>
+        <meta charset="UTF-8">
+        <title>Shift by Mission-4</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/shift.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+    </head>
+    <body>
 
-    
-    .container{
-      background: #000;
-      color: #fff;
-      padding: 10px;
-      border-radius: 10px;
-      border: 2px solid #ffa400;
-      width: 70%;
-      margin: 10px 0px 0px 90px;
-      display: block;
-      background-blend-mode: overlay;
-    }
-    .hud1{
-      position: fixed;
-      bottom: -200px;
-      left: -200px;
-      width: 400px;
-      height: 400px;
-      background: url(assets/hud1.svg) no-repeat;
-      background-size: contain;
-      -webkit-animation: hud1 5s infinite ease-out;
-    }
-    .logo{
-      position: fixed;
-      bottom: 0px;
-      left: 0px;
-      width: 200px;
-      height: 200px;
-      transform-origin: bottom left;
-      background: url(assets/logo.svg) no-repeat bottom right;
-      background-size: contain;
-    }
-    .scratches{
-      position: fixed;
-      bottom: 0px;
-      right: 0px;
-      width: 200px;
-      height: 200px;
-      background: url(assets/scratches.png) no-repeat;
-      background-size: contain;
-      //-webkit-animation: hud1 5s infinite ease-out;
-    }
-    
+        <div class="dashboard">
 
-    
-  </style>
-  
-</head>
-<body>
- 
-<!-- NAV AND HEADER-->
-  <div class="fixed-nav">
-    <a href="#" class="spin-button home"><span>Home</span></a>
-    <a href="#" class="spin-button recent"><span>Recent</span></a>
-    <a href="#" class="spin-button heart"><span>Liked</span></a>
-    <a href="#" class="spin-button star"><span>Favorites</span></a>
-    <a href="#" class="spin-button facebook"><span>Followed</span></a>
-    <a href="#" class="spin-button twitter"><span>Tweet</span></a>
-    <a href="#" class="spin-button gallery"><span>Gallery</span></a>
-  </div>
-  <div class="profile" id="profile">
-    <div class="profile-image">
-      <img src="assets/avatar.jpg" alt="">
-    </div>
-    <div class="user-profile">
-     <a href="#" class="close">&times;</a>
-      <div class="profile-info">
-        <h2>Sam Podlogar</h2>
-        <h3>Graphic Designer</h3>
-        <ul>
-          <li><a href="malto:sam@mission-4.com">sam@mission-4.com</a></li>
-          <li><a href="#">#mission-4</a></li>
-          <li><a href="#">@mission-4</a></li>
-          <li><a href="#">+sampodlogar</a></li>
-          <li><a href="#">(608) 935-5197</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    Shift <span class="microtext">by Mission-4</span>
+                </div>
 
+                <div class="nav-header">
+                    Site Administration
+                    <a href="#" class="pull-right action-link"><i class="ti-control-shuffle"></i></a>
+                </div>
+                <nav>
+                    <a href="#"><i class="item-icon ti-dashboard"></i> Dashboard</a>
+                    <a href="#"><i class="item-icon ti-user"></i> Users</a>
+                    <a href="#"><i class="item-icon ti-file"></i> Pages</a>
+                </nav>
 
-<!--CONTENT-->
+                <div class="nav-header">The Blog</div>
+                <nav>
+                    <a href="/project/hidalgo-connect/forms"><i class="item-icon ti-pin-alt"></i> Posts</a>
+                    <a href="/project/hidalgo-connect/faq-manager"><i class="item-icon ti-comments"></i> Comment Manager</a>
+                </nav>
 
-<div class="container">
+                <div class="nav-header">Your Account</div>
+                <nav>
+                    <a href="/profile"><i class="item-icon ti-user"></i> View Profile</a>
+                    <a href="/profile/edit"><i class="item-icon ti-pencil"></i> Edit Profile</a>
+                    <a href="/profile/security"><i class="item-icon ti-lock"></i> Security</a>
+                    <a href="/profile/billing"><i class="item-icon ti-credit-card"></i> Billing Information</a>
+                    <a href="/logout"><i class="item-icon ti-lock"></i> Log Out</a>
+                </nav>
+            </div>
 
-  <div class="action-buttons">
-   <a href="#" class="action-button follow"></a>
-   <a href="#" class="action-button like"></a>
-   <a href="#" class="action-button share"></a>
-   <a href="#" class="action-button email"></a>
-   <a href="#" class="action-button home"></a>
-   <a href="#" class="action-button recent"></a>
-   <a href="#" class="action-button tweet"></a>
-   <a href="#" class="action-button gallery"></a>
-   <a href="#" class="action-button bars"></a>
-  </div>
+            <div class="content-area">
+                <div class="topbar">
+                    <div class="searchform pull-left">
+                        <label for="searchStuff" class="bar-icon ti-search"></label><input id="searchStuff" type="search" placeholder="Search...">
+                    </div>
 
- <h1>Mission-4.com</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quidem, debitis accusantium aperiam totam blanditiis quisquam ratione aliquam est vel iusto aspernatur excepturi nemo possimus pariatur ab! Quos, a, iusto.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quidem, debitis accusantium aperiam totam blanditiis quisquam ratione aliquam est vel iusto aspernatur excepturi nemo possimus pariatur ab! Quos, a, iusto.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quidem, debitis accusantium aperiam totam blanditiis quisquam ratione aliquam est vel iusto aspernatur excepturi nemo possimus pariatur ab! Quos, a, iusto.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quidem, debitis accusantium aperiam totam blanditiis quisquam ratione aliquam est vel iusto aspernatur excepturi nemo possimus pariatur ab! Quos, a, iusto.</p>
-  
-  <a href="#profile">Link To My Profile</a>
-  
-</div>
+                    <div class="links pull-right">
+                        <a href=".dashboard" class="visible-xs" data-toggle-class="openSidebar"><i class="ti-menu"></i></a>
+                        <a href="#"><i class="ti-control-shuffle"></i></a>
+                        <a href="#"><i class="ti-home"></i></a>
+                    </div>
+                </div>
 
-<div class="hud1">
-</div>
-<div class="logo">
-</div>
-<div class="scratches">
-</div>
+                <div class="no-pad clearfix">
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Users
+                            </div>
+                            <div class="panel-body">
+                                <h1 class="text-center">412</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Pages
+                            </div>
+                            <div class="panel-body">
+                                <h1 class="text-center">189</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Comments
+                            </div>
+                            <div class="panel-body">
+                                <h1 class="text-center">62,045</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<script src="assets/jquery.js"></script>
-  <script>
-    
-    $(document).ready(function(){
-      $(".profile-image").click(function(){
-        $(".profile").toggleClass("hover");
-        
-      });
-    });
-    
-  </script>
-</body>
+                <div class="main-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="panel panel-default panel-info">
+                                <div class="panel-heading">
+                                    From Mission-4.com
+                                </div>
+                                <div class="list-group">
+                                    <div class="list-group-item">
+                                        <h4 class="list-group-item-heading">What a Vue!</h4>
+                                        <div class="list-group-item-text">
+                                            Vue.js has leterally exploded in the...
+                                            <div>
+                                                <a href="#">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <h4 class="list-group-item-heading">Introducing Shift</h4>
+                                        <div class="list-group-item-text">
+                                            Shift is a UI taylor made for admin...
+                                            <div>
+                                                <a href="#">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <h4 class="list-group-item-heading">Hello World</h4>
+                                        <div class="list-group-item-text">
+                                            Manage your Blog Posts from Shift's...
+                                            <div>
+                                                <a href="#">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">Quick Post</div>
+                                <div class="panel-body">
+                                    <form>
+                                        <!-- Title Form Field -->
+                                        <fieldset class="form-group">
+                                            <label for="title" class="control-label">Title</label>
+                                            <input type="text" class="form-control" name="title" id="title">
+                                        </fieldset>
+
+                                        <!-- Content Form Field -->
+                                        <fieldset class="form-group">
+                                            <label for="content" class="control-label">Content</label>
+                                            <textarea class="form-control" id="simpleMDE"></textarea>
+                                        </fieldset>
+
+                                        <div>
+                                            <button class="btn btn-block btn-primary">Post</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <script src="http://code.dev/jquery/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/app-min.js"></script>
+    </body>
 </html>

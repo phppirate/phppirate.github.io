@@ -1,0 +1,33 @@
+.dashboard {
+    display flex
+    flex-direction row
+    height 100%
+}
+
+@media (max-width: 767px) {
+    .openSidebar .sidebar {
+        left: 0px;
+        box-shadow: -12px 0px 50px 50px rgba(0, 0, 0, 0.65);
+    }
+
+    .openSidebar .content-area {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        box-shadow: 0 0px 20px rgba(0, 0, 0, 0.53);
+    }
+
+    .openSidebar .content-area .main-content {
+        opacity: .5;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: -200px;
+        z-index: 100;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.65);
+    }
+}

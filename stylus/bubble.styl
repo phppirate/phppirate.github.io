@@ -1,0 +1,57 @@
+.bubble-hover{
+    display inline-block
+    background none
+    border-radius 100%
+    width: 24px
+    height 24px
+    margin 0px 5px
+    line-height 25px
+    text-align center
+    color lighten(brand-success, 10%)
+    box-shadow none
+    transition box-shadow .2s
+    
+    &:hover, &:active, &:focus{
+        color brand-success
+        text-decoration none
+        box-shadow 0px 0px 0px 5px brand-success
+        outline none
+    }
+}
+
+.bubble-primary{
+    color brand-primary
+    &:hover, &:active, &:focus{
+        color lighten(brand-primary, 10%)
+        box-shadow 0px 0px 0px 5px lighten(brand-primary, 10%)
+    }
+}
+
+.bubble-info{
+    color lighten(brand-info, 10%)
+    &:hover, &:active, &:focus{
+        color brand-info
+        box-shadow 0px 0px 0px 5px brand-info
+    }
+}
+.bubble-warning{
+    color lighten(brand-warning, 10%)
+    &:hover, &:active, &:focus{
+        color brand-warning
+        box-shadow 0px 0px 0px 5px brand-warning
+    }
+}
+.bubble-danger{
+    color lighten(brand-danger, 10%)
+    &:hover, &:active, &:focus{
+        color brand-danger
+        box-shadow 0px 0px 0px 5px brand-danger
+    }
+}
+.bubble-success{
+    color lighten(brand-success, 10%)
+    &:hover, &:active, &:focus{
+        color brand-success
+        box-shadow 0px 0px 0px 5px brand-success
+    }
+}

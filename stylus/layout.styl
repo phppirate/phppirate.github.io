@@ -1,0 +1,30 @@
+.text-muted-more{
+    color #bbb
+}
+.bottom-bar{
+    width 150px
+    margin 20px auto
+    height 2px
+    background brand-success
+}
+
+.note-bell{
+    position relative
+    
+    .red-dot{
+        top 1px
+        right 0px
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        display: block;
+        background: red;
+        border-radius: 100%;
+        border: 2px solid #fff;
+        transform scale(1)
+        transition transform .2s
+    }
+    &:hover .red-dot{
+        transform scale(1.5)
+    }
+}
